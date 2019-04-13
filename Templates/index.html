@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}index{% endblock %}
+
+{% block content %}
+    {%  if request.session.is_login %}
+        <h1>you already login</h1>
+    {% else %}
+        <h1>please login</h1>
+    {% endif %}
+{% endblock %}
+
